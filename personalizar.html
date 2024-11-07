@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar Paquete - Hornero Viajes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem;
+        }
+        form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+        label, select, input {
+            display: block;
+            margin: 0.5rem 0;
+            width: 100%;
+        }
+        select, input[type="checkbox"] {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 1rem;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 4px;
+            background-color: #004080;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Personaliza tu Paquete de Viaje</h1>
+</header>
+
+<main>
+    <form action="confirmacion.html" method="post">
+        <label for="alojamiento">Tipo de Alojamiento:</label>
+        <select id="alojamiento" name="alojamiento" required>
+            <option value="hotel">Hotel</option>
+            <option value="hostal">Hostal</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="resort">Resort</option>
+        </select>
+
+        <label for="actividades">Actividades:</label>
+        <input type="checkbox" id="excursion" name="actividades" value="excursion">
+        <label for="excursion">Excursión</label>
+
+        <input type="checkbox" id="deporte" name="actividades" value="deporte">
+        <label for="deporte">Deportes</label>
+
+        <input type="checkbox" id="cultural" name="actividades" value="cultural">
+        <label for="cultural">Tour Cultural</label>
+
+        <input type="checkbox" id="relax" name="actividades" value="relax">
+        <label for="relax">Día de Spa</label>
+
+        <button type="submit">Confirmar Paquete</button>
+    </form>
+</main>
+
+</body>
+</html>
